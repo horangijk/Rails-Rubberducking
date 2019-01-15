@@ -1,0 +1,9 @@
+<h1>This is <%=@student.name%>'s page.</h1>
+
+<ul>
+  <%@student.ducks.each do |duck| %>
+  <li>
+    <%= link_to duck.name, duck_path(duck) %>
+  </li>
+  <% end %>
+</ul>
